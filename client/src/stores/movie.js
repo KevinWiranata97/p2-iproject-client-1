@@ -78,7 +78,7 @@ export const useMovieStore = defineStore({
     async payment() {
       try {
         const response = await axios({
-          url: "http://localhost:3000/payment",
+          url: "https://iproject-kevinwiranata.herokuapp.com/payment",
           method: "POST",
           headers: {
             access_token: localStorage.getItem("access_token"),
